@@ -5,8 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SouilSolit</title>
+
+    <link rel="stylesheet" href="styles/login.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    
+    <div class="main-card">
+
+        <!-- Inputs do Login-->
+        <div class="input__card">
+            <div class="email">
+                <p>Username</p>
+                <i class="fa-solid fa-circle-user"></i>
+                <label for="mail">Digite Seu Email: </label>
+                <input type="email" name="amail" id="email">
+                <hr>
+            </div>
+            <div class="password">
+                <p>Senha</p>
+                <i class="fa-solid fa-lock"></i>
+                <label for="sen">Digite sua senha: </label>
+                <input type="password" name="swd" id="sen">
+            
+            </div>
+            <div class="replace__password">
+                <p>Esqueceu a senha ?</p>
+
+            </div>
+
+            <!-- Button de Login-->
+            <div class="button__login">
+                <button type="submit">Login</button>
+            </div>
+            <!-- Entrada com Apis / Google / Facebook / Twitter-->
+
+        <div class="auths">
+
+            <div class="facebook__icon">
+                <a href="#" class="link__icon">
+                    <img src="Img/facebook.png" alt="" width="32px" height="32px">
+                </a>
+            </div>
+            <div class="microsoft__icon">
+                <a href="#" class="link__icon">
+                    <img src="Img/microsoft.png" alt="" width="32px" height="32px">
+                </a>
+            </div>
+            <div class="google__icon">
+                <a href="#" class="link__icon">
+                    <img src="Img/google.png" alt="" width="32px" height="32px">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts for Reloud -->
+    <script src="login.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 </body>
 </html>
